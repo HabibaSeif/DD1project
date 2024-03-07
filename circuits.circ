@@ -1,0 +1,56 @@
+Circuit 1:
+INPUTS
+A
+B
+C
+D
+COMPONENTS
+G0, NOT, w1, A, B
+G1, OR2, w2, A, w1
+G2, AND2, w3, C, w2
+G3, NAND2, w4, D, w3
+
+
+Circuit 2:
+INPUTS 
+A
+B
+C
+COMPONENTS
+G0, NOT, w1, B
+G1, XOR2, w2, w1, A
+G2, AND2, w3, w2, C
+
+
+Circuit 3:
+INPUTS
+A
+B
+C
+D
+COMPONENTS
+G0, NAND2, w1, A, B
+G1, OR2  , w2, C, D
+G3, XOR2 , w3,w2,w1
+
+
+Circuit 4:
+INPUTS
+A
+B
+C
+COMPONENTS
+G0 XOR2, w1, A, B
+G1 NOT , w2, C
+G2 XOR2, w3, w2, w1
+
+
+Circuit 5:
+INPUTS
+A
+B
+C
+COMPONENTS
+G0, NOR2, w1, A, B
+G1, NOT, w2, C
+G2, AND2, w3, w1, w2
